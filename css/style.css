@@ -32,7 +32,9 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
+
+    background: rgba(0, 0, 0, 0.4);
+
     top: 0;
     left: 0;
 }
@@ -48,7 +50,6 @@ header {
 
 .contenido h1 {
     font-size: 50px;
-}
 
 .libro-card {
     font-family: 'Roboto', sans-serif;
