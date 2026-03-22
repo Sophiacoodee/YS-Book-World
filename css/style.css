@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     margin: 0;
     overflow-x: hidden;
+
     overflow-y: auto;
     font-family: Arial, sans-serif;
 }
@@ -10,7 +13,6 @@ header {
 }
 
 .navbar {
-    position: fixed;
     width: 100%;
     z-index: 1000;
     background-color: rgb(0, 0, 0);
@@ -32,7 +34,9 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
+
     background: rgba(0, 0, 0, 0.4);
+
     top: 0;
     left: 0;
 }
@@ -48,4 +52,63 @@ header {
 
 .contenido h1 {
     font-size: 50px;
+
+.libro-card {
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.libro-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px black;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: purple;
+    margin: 8px auto;
+} 
+
+.libro-card .card-body {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.libro-card .card-body h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: #222;
+}
+
+.libro-card .card-body p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.libro-card .card-body .text-warning {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.libro-card .card-body button {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
 }
